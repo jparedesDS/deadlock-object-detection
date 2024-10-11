@@ -3,6 +3,9 @@
 #### Supported Labels
 ['allie', 'ennemi', 'mob', 'orbe']
 
+#### MODEL YOLO11l
+- Yolo11l: https://huggingface.co/jparedesDS/deadlock-yolo11l
+
 #### ALL my models YOLO11, YOLOv10 & YOLOv9
 - Yolov9c: https://huggingface.co/jparedesDS/cs2-yolov9c
 - Yolov10s: https://huggingface.co/jparedesDS/cs2-yolov10s
