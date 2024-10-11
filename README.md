@@ -13,7 +13,6 @@
 - Yolov10b: https://huggingface.co/jparedesDS/cs2-yolov10b
 - Yolov10b: https://huggingface.co/jparedesDS/valorant-yolov10b
 - Yolo11m: https://huggingface.co/jparedesDS/valorant-yolo11m
-- Yolo11l: https://huggingface.co/jparedesDS/deadlock-yolo11l
 
 #### How to use
 ```
