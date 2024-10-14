@@ -1,10 +1,7 @@
 # Deadlock Players Detector
 
 #### Supported Labels
-['allie', 'ennemi', 'mob', 'orbe']
-
-#### MODEL YOLO11l for Deadlock Object Detection
-- Yolo11l: https://huggingface.co/jparedesDS/deadlock-yolo11l
+['deny', 'enemy', 'hit', 'minions']
 
 #### ALL my models YOLO11, YOLOv10 & YOLOv9
 - Yolov9c: https://huggingface.co/jparedesDS/cs2-yolov9c
@@ -13,6 +10,7 @@
 - Yolov10b: https://huggingface.co/jparedesDS/cs2-yolov10b
 - Yolov10b: https://huggingface.co/jparedesDS/valorant-yolov10b
 - Yolo11m: https://huggingface.co/jparedesDS/valorant-yolo11m
+- Yolo11l: https://huggingface.co/jparedesDS/deadlock-yolo11l
 
 #### How to use
 ```
@@ -29,22 +27,21 @@ model.predict(
     )
 ```
 #### Confusion matrix normalized
-![confusion_matrix_normalized.png](https://cdn-uploads.huggingface.co/production/uploads/62e1c9b42e4cab6e39dafc97/MDMOTxs4G4qNBQFJcDU3l.png)
+![confusion_matrix_normalized.png](https://cdn-uploads.huggingface.co/production/uploads/62e1c9b42e4cab6e39dafc97/FIZ5RQWnc61uzl7CNBOkq.png)
 #### Labels
-![labels.jpg](https://cdn-uploads.huggingface.co/production/uploads/62e1c9b42e4cab6e39dafc97/YTdoZBR1OWMyBkkJ9Q0ft.jpeg)
+![labels.jpg](https://cdn-uploads.huggingface.co/production/uploads/62e1c9b42e4cab6e39dafc97/ESwV9FZEdDZOSCSIQto3N.jpeg)
 #### Results
-![results.png](https://cdn-uploads.huggingface.co/production/uploads/62e1c9b42e4cab6e39dafc97/Yt-rYobyjz4t5O8WiapwS.png)
+![results.png](https://cdn-uploads.huggingface.co/production/uploads/62e1c9b42e4cab6e39dafc97/k5XlHxnTNEFWM0_RVjDbK.png)
 #### Predict
-![val_batch0_labels.jpg](https://cdn-uploads.huggingface.co/production/uploads/62e1c9b42e4cab6e39dafc97/szWzcf3WFuhjVFyb4RwtE.jpeg)
-![val_batch0_pred.jpg](https://cdn-uploads.huggingface.co/production/uploads/62e1c9b42e4cab6e39dafc97/MrKln2QfKXgEd4m_eBj5d.jpeg)
+![val_batch1_labels.jpg](https://cdn-uploads.huggingface.co/production/uploads/62e1c9b42e4cab6e39dafc97/MWBpq382VcQfXOdXZS2N-.jpeg)
 ```
 YOLO11l summary (fused): 464 layers, 25,282,396 parameters, 0 gradients, 86.6 GFLOPs
-                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 3/3 [00:01<00:00,  2.81it/s]
-                   all        138        230      0.801      0.647      0.723      0.382
-                 allie         12         15      0.662      0.733      0.714      0.419
-                ennemi         85         97      0.889      0.743      0.852      0.522
-                   mob         40         92      0.822      0.651      0.733      0.353
-                  orbe         20         26      0.832      0.462      0.592      0.234
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 8/8 [00:03<00:00,  2.37it/s]
+                   all        551        661      0.874      0.798      0.856      0.486
+                  deny         13         14      0.748      0.857      0.819       0.48
+                 enemy        197        228      0.942      0.785      0.883      0.508
+                   hit         40         53      0.861      0.704      0.787      0.409
+               minions        222        366      0.945      0.847      0.933      0.546
 ```
 
 #### Others models Counter Strike 2 YOLOv10m Object Detection
