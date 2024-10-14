@@ -1,8 +1,8 @@
 task: detect
 mode: train
 model: yolo11l.pt
-data: /content/drive/MyDrive/OBJECT DETECTION/00. Datasets/deadlock_2/data.yaml
-epochs: 100
+data: /content/drive/MyDrive/OBJECT DETECTION/00. Datasets/dl-dataset/data.yaml
+epochs: 250
 time: null
 patience: 50
 batch: -1
@@ -13,7 +13,7 @@ cache: false
 device: null
 workers: 8
 project: null
-name: train
+name: train2
 exist_ok: false
 pretrained: true
 optimizer: auto
@@ -104,4 +104,4 @@ erasing: 0.4
 crop_fraction: 1.0
 cfg: null
 tracker: botsort.yaml
-save_dir: runs/detect/train
+save_dir: runs/detect/train2
